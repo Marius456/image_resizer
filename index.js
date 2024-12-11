@@ -1,9 +1,13 @@
-const resizeLaunchIcons = require('./src/resizeLaunchIcons')
+const resizeIcon = require('./src/utils/resizeIcon')
+const resize_drawable = require('./src/resize_drawable')
+const resize_mipmap = require('./src/resize_mipmap')
 
-function helloNpm() {
-  resizeLaunchIcons('./files/input/ic_logo.png', './files/output');
-  // resizeLaunchIcons('./files/input/ic_launcher.png', './files/output');
-  return "hello NPM"
+function testNpm() {
+  resize_drawable('./files/output');
+  resize_mipmap('./files/output');
 }
-helloNpm()
-// module.exports = helloNpm
+testNpm()
+
+module.exports = resizeIcon
+module.exports = resize_drawable
+module.exports = resize_mipmap
