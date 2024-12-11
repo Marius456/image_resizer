@@ -1,0 +1,17 @@
+{
+  "name": "image_resizer",
+  "version": "0.0.1",
+  "description": "Tool to change image dimensions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "image"
+  ],
+  "author": "marius",
+  "license": "ISC",
+  "dependencies": {
+    "jimp":"1.6.0"
+  }
+}
