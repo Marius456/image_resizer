@@ -6,7 +6,6 @@ async function resizeIcon(filePath, outputDir, fileName, width, height){
     
         image.resize({ w: width, h: height });
     
-        // await image.write(`${outputDir}/resized_${width}_${height}.png`);
         await image.write(`${outputDir}/${fileName}.png`);
     } catch (error) {
         console.error("Error processing image:", error);
