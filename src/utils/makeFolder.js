@@ -1,14 +1,14 @@
-var fs = require('fs');
+const fs = require('fs');
 
-function makeFolder(outputDir, folderName){
-    const dir = `${outputDir}/${folderName}`
-    try {
-        if (!fs.existsSync(dir)){
-            fs.mkdirSync(dir);
-        }
-    } catch (error) {
-        console.error("Error while creating a folder:", error);
+function makeFolder(folderPath) {
+    if (!fs.existsSync(folderPath)) {
+        fs.mkdirSync(folderPath, { recursive: true });
+        console.log(`Directory created: ${folderPath}`);
+    } else {
+        console.log(`Directory already exists: ${folderPath}`);
     }
 }
+
+
 
 module.exports = makeFolder

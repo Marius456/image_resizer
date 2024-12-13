@@ -2,7 +2,7 @@ const resizeIcon = require('./utils/resizeIcon')
 const makeFolder = require('./utils/makeFolder')
 
 async function resize_mipmap(outputDir) {
-    const iconPath = './files/input/ic_launcher.png';
+    const iconPath = '/Users/mariuszilguzis/Desktop/zxc.png';
     const mipmaps = [
       { folder: 'mipmap-hdpi', name: 'ic_launcher', width: 72, height: 72 },
       { folder: 'mipmap-mdpi', name: 'ic_launcher', width: 48, height: 48 },
@@ -12,7 +12,7 @@ async function resize_mipmap(outputDir) {
     ];
   
     for (const mipmap of mipmaps) {
-      makeFolder(outputDir, mipmap.folder);
+      makeFolder(`${outputDir}/${mipmap.folder}`);
       await resizeIcon(iconPath, `${outputDir}/${mipmap.folder}`, mipmap.name, mipmap.width, mipmap.height);
     }
   }

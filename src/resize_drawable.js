@@ -2,7 +2,7 @@ const resizeIcon = require('./utils/resizeIcon')
 const makeFolder = require('./utils/makeFolder')
 
 async function resize_drawable(outputDir) {
-    const iconPath = './files/input/ic_logo.png';
+    const iconPath = '/Users/mariuszilguzis/Desktop/zxc.png';
     const drawables = [
       { folder: 'drawable', name: 'ic_logo', width: 432, height: 236 },
       { folder: 'drawable-hdpi', name: 'banner', width: 240, height: 135 },
@@ -13,7 +13,7 @@ async function resize_drawable(outputDir) {
     ];
   
     for (const drawable of drawables) {
-      makeFolder(outputDir, drawable.folder);
+      makeFolder(`${outputDir}/${drawable.folder}`);
       await resizeIcon(iconPath, `${outputDir}/${drawable.folder}`, drawable.name, drawable.width, drawable.height);
     }
   }
