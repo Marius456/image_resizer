@@ -5,10 +5,10 @@ const generateIos = require('./src/generateIos')
 const generateTvos = require('./src/generateTvos')
 const generateFiretv = require('./src/generateFiretv')
 const generateWebos = require('./src/generateWebos')
+const generateMacos = require('./src/generateMacos')
 
 
 const update_project = () => {
-    // 500 × 487
     generateAndroid()
     generateAndroidtv()
     generateAndroidwear()
@@ -16,6 +16,7 @@ const update_project = () => {
     generateIos()
     generateTvos()
     generateWebos()
+    generateMacos()
     console.log('Updated project')
 }
 
