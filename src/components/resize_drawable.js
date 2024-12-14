@@ -1,5 +1,5 @@
-const resizeIcon = require('./utils/resizeIcon')
-const makeFolder = require('./utils/makeFolder')
+const resizeIcon = require('../utils/resizeIcon')
+const makeFolder = require('../utils/makeFolder')
 
 async function resize_drawable(outputDir) {
     const iconPath = '/Users/mariuszilguzis/Desktop/zxc.png';

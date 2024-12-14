@@ -1,5 +1,5 @@
-const resize_drawable = require('./resize_drawable')
-const resize_mipmap = require('./resize_mipmap')
+const resize_drawable = require('./components/resize_drawable')
+const resize_mipmap = require('./components/resize_mipmap')
 const makeFolder = require('./utils/makeFolder')
 
 function generateAndroid() {
