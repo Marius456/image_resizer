@@ -4,6 +4,7 @@ const generateAndroidwear = require('./src/generateAndroidwear')
 const generateIos = require('./src/generateIos')
 const generateTvos = require('./src/generateTvos')
 const generateFiretv = require('./src/generateFiretv')
+const generateWebos = require('./src/generateWebos')
 
 
 const update_project = () => {
@@ -14,6 +15,7 @@ const update_project = () => {
     generateFiretv()
     generateIos()
     generateTvos()
+    generateWebos()
     console.log('Updated project')
 }
 
