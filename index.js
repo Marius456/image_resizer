@@ -6,9 +6,12 @@ const generateTvos = require('./src/generateTvos')
 const generateFiretv = require('./src/generateFiretv')
 const generateWebos = require('./src/generateWebos')
 const generateMacos = require('./src/generateMacos')
+const generateWindows = require('./src/generateWindows')
 
 
 const update_project = () => {
+    // web
+    // linux
     generateAndroid()
     generateAndroidtv()
     generateAndroidwear()
@@ -17,6 +20,7 @@ const update_project = () => {
     generateTvos()
     generateWebos()
     generateMacos()
+    generateWindows()
     console.log('Updated project')
 }
 
