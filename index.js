@@ -1,6 +1,7 @@
 const generateAndroid = require('./src/generateAndroid')
 const generateAndroidtv = require('./src/generateAndroidtv')
 const generateIos = require('./src/generateIos')
+const generateTvos = require('./src/generateTvos')
 
 
 const update_project = () => {
@@ -8,6 +9,7 @@ const update_project = () => {
     generateAndroid()
     generateAndroidtv()
     generateIos()
+    generateTvos()
     console.log('Updated project')
 }
 
