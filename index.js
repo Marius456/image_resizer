@@ -7,6 +7,7 @@ const generateFiretv = require('./src/generateFiretv')
 const generateWebos = require('./src/generateWebos')
 const generateMacos = require('./src/generateMacos')
 const generateWindows = require('./src/generateWindows')
+const generateTizen = require('./src/generateTizen')
 
 
 const update_project = () => {
@@ -21,6 +22,7 @@ const update_project = () => {
     generateWebos()
     generateMacos()
     generateWindows()
+    generateTizen()
     console.log('Updated project')
 }
 
