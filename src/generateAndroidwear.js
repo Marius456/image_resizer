@@ -2,8 +2,8 @@ const resize_drawable = require('./components/resize_drawable')
 const resize_mipmap = require('./components/resize_mipmap')
 const makeFolder = require('./utils/makeFolder')
 
-function generateAndroidtv() {
-    const basePath = './files/output/builds/androidtv/app/src/main/res';
+function generateAndroidwear() {
+    const basePath = './files/output/builds/androidwear/app/src/main/res';
 
     makeFolder(basePath);
     resize_drawable(basePath);
@@ -11,4 +11,4 @@ function generateAndroidtv() {
 }
 
 
-module.exports = generateAndroidtv
+module.exports = generateAndroidwear
