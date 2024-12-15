@@ -6,12 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "update-assets": "./index.js"
+  },
   "keywords": [
     "image"
   ],
   "author": "marius",
   "license": "ISC",
   "dependencies": {
-    "jimp":"1.6.0"
+    "jimp": "1.6.0"
   }
 }
