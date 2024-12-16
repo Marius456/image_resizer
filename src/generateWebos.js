@@ -1,8 +1,7 @@
 const resizeIcon = require("./utils/resizeIcon");
 const makeFolder = require("./utils/makeFolder");
 
-async function generateWebos(iconPath) {
-  const basePath = "./files/output/builds/webos";
+async function generateWebos(basePath, iconPath) {
 
   makeFolder(basePath);
   resizeIcon(iconPath, basePath, "icon", 80, 80);
