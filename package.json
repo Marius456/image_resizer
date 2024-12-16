@@ -1,6 +1,6 @@
 {
   "name": "test57382resizer",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Tool to change image dimensions",
   "main": "index.js",
   "scripts": {
